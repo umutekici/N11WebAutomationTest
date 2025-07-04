@@ -13,14 +13,14 @@ public class TestWebAutomation {
     public static WebDriver driver;
     private static String loginUrl;
     protected static String BaseUrl = "https://www.n11.com/";
-    public static String email = "flynnb41@zwwaltered.com";
-    public static String password = "1q2w3e4r5t";
+    public static String email = "your_email";
+    public static String password = "your_password";
     public static LoginPage loginPage;
     public static SearchProduct searchProduct;
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\umut_\\Desktop\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "your_path_chromedriver.exe");
         driver = new ChromeDriver();
         loginUrl = "https://www.n11.com/giris-yap";
         driver.manage().window().maximize();
